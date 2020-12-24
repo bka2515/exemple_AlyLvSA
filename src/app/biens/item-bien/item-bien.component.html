@@ -1,0 +1,14 @@
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top"  src="{{bien.image}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{bien.title | uppercase }}</h5>
+      <p class="card-text">{{bien.description | summarize:50}}
+      </p>
+      <hr>
+          <span class="float-left btn btn-sm btn-outline-danger desabled">{{bien.price }}fcfa</span>
+          <span class="btn btn-sm text-center desabled">Il y'a {{bien.createAt | timeLeft}}</span>
+      
+      <a routerLink="/bien" class="btn btn-sm btn-primary float-right"> Réserver</a>
+      
+    </div>
+  </div>

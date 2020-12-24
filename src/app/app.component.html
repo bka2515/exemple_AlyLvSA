@@ -1,0 +1,15 @@
+<!-- <h1>hello</h1> -->
+<!-- <h1>hello {{nom}}</h1>
+<button class="btn btn-info" (click)= "onClickBtn()">{{textBtn}}</button>
+<hr>
+<input [(ngModel)]="nom" [desabled]="!ok"type="text"> -->
+<app-header (searchEvent)='receiveSearch($event)'></app-header>
+ <app-jumbotron-bien></app-jumbotron-bien>
+ <div class="container">
+     
+     <router-outlet ></router-outlet>
+  <!-- <app-list-bien></app-list-bien> -->
+ </div>
+
+<app-footer></app-footer>
+
